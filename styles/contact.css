@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Neucha&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;   
+    background-color: rgb(212, 44, 44);
+    height: 3.5rem;
+    width: 55%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;       
+ 
+}
+
+#logo { /*Logo de la barra de navegación*/
+    float: left;
+    display: block;    
+    height: 61px; 
+    width: 200px;
+    margin: none;
+    background-color: rgb(223, 217, 217);
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    
+}
+
+body {
+    background-image: url(images/fondo_body.jpg);
+    background-size: cover;
+    background-attachment: fixed;    
+    
+}
+
+#container { /*Container de Conctacto*/
+    background-image: url(images/soporte.jpg);
+    background-color: aquamarine;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 55%;
+    height: 70%;     
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 8%;
+    overflow: hidden;
+    color: white; text-shadow: 0 0 0.2em black, 0 0 0.2em rgb(189, 38, 38);
+    font-family: 'Nanum Gothic Coding', monospace;   
+    font-size: 1.5rem;
+}
+
+#container a { /*Links*/
+    color: white;
+
+}
+
+#contact_text {
+    margin-left: 2.5rem;
+    margin-top: 2rem;    
+    
+}
+
+#contact_form {
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+}
+
+#left {    
+    width: 50%;
+    position: absolute;
+    float: left;       
+    bottom: 2.5rem;      
+}
+
+#right {    
+    width: 50%;
+    position: absolute;    
+    bottom: 2.5rem;
+    right: 0;    
+
+}
+
+#messaje {
+    width: 30rem;
+    height: 5.7rem;
+}
+
+#contact_form h2 {
+    position: relative;
+    margin-bottom: 1rem;
+    
+}
+
+footer {
+    background-color: white;
+    position: absolute; 
+    color: black;    
+    width: 100%;
+    height: 2rem;       
+    bottom: 0;
+    text-align: center;       
+}
