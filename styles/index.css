@@ -7,30 +7,59 @@
 }
 
 header {
-    position: absolute;   
-    background-color: rgb(212, 44, 44);
-    height: 3.5rem;
+    position: absolute;       
     width: 55%;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 5%;       
- 
+    margin-top: 4.9%;
+    background-color: rgba(19, 17, 17, 0.712);
+    border-radius: 3rem 0rem 0rem 0rem;
+    
 }
 
-#logo { /*Logo de la barra de navegación*/
-    float: left;
-    display: block;    
-    height: 61px; 
+#logo { 
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    height: 65px; 
     width: 200px;
-    margin: none;
-    background-color: rgb(223, 217, 217);
+    border-radius: 60px; 
+    left: 0;   
+    top: 0;
+    padding: 0.5px;
+    z-index: 100;
+    margin-top: -3px;
 }
 
 .navbar {
     display: flex;
-    justify-content: flex-end;
-    align-items: center; 
+    justify-content: right;
+    align-items: flex-end;    
+    height: 3.8rem;
     
+}
+
+.menu {
+    display: flex;
+    font-family: 'Nanum Gothic Coding', monospace;    
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    color: white; text-shadow: 0 0 0.2em rgba(255, 0, 0, 0.644);
+    text-decoration: none;
+    font-weight: bold; 
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 22.5px; 
+    /* border-radius: 1rem;  */
+    display: flex;
+    
+}
+
+.menu li a:hover {
+    background: rgba(211, 18, 18, 0.432);    
 }
 
 body {
@@ -51,34 +80,41 @@ body {
     margin-right: 20%;
     margin-top: 8%;
     overflow: hidden;   
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
 
 }
 
 #container_i h1  { /*Titulo del index*/
-    margin-top: 1rem;
-    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.3rem;
     text-align: center;
-    font-size: 3rem;
-    color: white; text-shadow: 0 0 0.2em rgb(201, 25, 25), 0 0 0.2em rgb(221, 37, 37) ;
+    font-size: 3.5rem;
+    color: white; text-shadow: 0 0 0.2em rgb(201, 25, 25), 0 0 0.2em rgb(221, 37, 37);
     font-family: 'Nanum Gothic Coding', monospace;
  
 }
 
 #container_i p { /*Parrafos del Index*/
     text-align: center;
-    font-size: 1.90rem;
+    font-size: 1.95rem;
     color: white; text-shadow: 0 0 0.2em black, 0 0 0.2em red; 
     font-family: 'Nanum Gothic Coding', monospace;    
     margin: 1.5rem;
 }
 
 #container_i a { /*Links */
-    color: white;
+    color: whitesmoke;
 
 }
 
+#container_i a:hover {
+    background: rgba(243, 35, 35, 0.616);
+    padding: 0.2rem;
+}
+
 footer {
-    background-color: rgba(255, 255, 255, 0.582);
+    background-color: rgba(245, 222, 222, 0.644);
+    font-family: 'Nanum Gothic Coding', monospace;
     position: absolute; 
     color: black;       
     width: 100%;

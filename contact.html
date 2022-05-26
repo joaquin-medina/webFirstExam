@@ -8,14 +8,22 @@
     <link rel="stylesheet" href="./styles/contact.css">
 </head>
 <header>
-    <a href="/index.html"><div id="logo"><img src="images/logo2.png" alt="Logo de Suplementos Chaves" id="logo"/></div></a>
     <nav class="navbar">
-    <ul>   
-        <a href="/index.html">Inicio</a>
-        <a href="/products.html">Productos</a>
-        <a href="/faq.html">Preguntas frecuentes</a>
-        <a href="/contact.html">Contacto</a>    
-    </ul>
+        <a href="/index.html"><div id="logo"><img src="images/logo2.png" alt="Logo de Suplementos Chaves" id="logo"/></div></a>
+            <ul class="menu">
+                <li>
+                    <a href="/index.html">Inicio</a>
+                </li>   
+                <li>
+                    <a href="/products.html">Productos</a>
+                </li>   
+                <li>
+                    <a href="/faq.html">Preguntas frecuentes</a>
+                </li>   
+                <li>
+                    <a href="/contact.html">Contacto</a> 
+                </li>   
+            </ul>
     </nav>                
 </header>
 <body>
@@ -26,7 +34,7 @@
                 <h3>SUPLEMENTOS CHAVES</h3><br>
                 <h4>INFORMACIÓN DE CONTACTO</h4><br>
                 <p>Email: <br> contacto@supchaves.com.ar <img src="images/mail.png" height="25px" alt="Logo de un Sobre"/> </p><br>
-                <p> WhatsApp <br>
+                <p> WhatsApp: <br>
                     <a href="https://wa.me/2983547103" target="_blank" title="Contactar por WhatsApp">2983547103 - Joaquín</a> 
                     <a href="https://wa.me/2983570582" target="_blank" title="Contactar por WhatsApp">2983570582 - Sergio</a> <img src="./images/wapp.png" height="25px" alt="Logo de WhatsApp"/> 
                 </p><br> 
@@ -44,12 +52,12 @@
                 <form>                                       
                     <div id="left">
                         <h2>FORMULARIO DE CONTACTO:</h2> 
-                        <p>Nombre: <br><label for="name"><input type="text" id="name" placeholder="Escriba su nombre" required name="form" size="50"></label><br></p>
-                        <p>Celular: <br><label for="phone"><input type="text" id="phone" placeholder="Escriba su celular" required name="form" size="50"></label><br></p>
-                        <p>E-mail: <br><label for="email"><input type="text" id="email" placeholder="Escriba su mail" required name="form" size="50"></label><br></p>
+                        <label for="name">Nombre: <br><input type="text" id="name" placeholder="Escriba su nombre" required name="form" size="50"></label><br>
+                        <label for="phone">Celular: <br><input type="tel" id="phone" placeholder="Escriba su celular" required name="form" size="50"></label><br>
+                        <label for="email">E-mail: <br><input type="text" id="email" placeholder="Escriba su mail" required name="form" size="50"></label><br>
                     </div>
                     <div id="right">                
-                        <p>Mensaje:<br><label for="messaje"><textarea id="messaje" placeholder="Deje aquí su mensaje" required name="form"></textarea></label></p>
+                        <label for="messaje">Mensaje:<br><textarea id="messaje" placeholder="Deje aquí su mensaje" required name="form"></textarea></label>
                         <button type="submit" >Enviar</button>
                     </div>
                 </form>               
