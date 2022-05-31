@@ -12,21 +12,21 @@ header {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 4.9%;
-    background-color: rgba(19, 17, 17, 0.712);
+    background-color: rgb(0, 0, 0); 
     border-radius: 3rem 0rem 0rem 0rem;
 }
 
 #logo { 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(241, 234, 234);
     position: absolute;
-    height: 65px; 
+    height: 70px; 
     width: 200px;
     border-radius: 60px; 
     left: 0;   
-    top: 0;
-    padding: 0.5px;
-    z-index: 100;
-    margin-top: -3px;
+    bottom: -1px;
+    z-index: 30;
+    transform: scale(1.08);
+
 }
 
 .navbar {
@@ -50,25 +50,25 @@ header {
     color: white; text-shadow: 0 0 0.2em rgba(255, 0, 0, 0.644);
     text-decoration: none;
     font-weight: bold; 
-    background-color: rgba(0, 0, 0, 0.486);
-    padding: 22.5px; 
-    /* border-radius: 1rem;  */
+    background-color: rgba(44, 42, 42, 0.568);
+    padding: 22.5px;   
     display: flex;
     
 }
 
 .menu li a:hover {
-    background: rgba(211, 18, 18, 0.432);    
+    background: rgba(243, 35, 35, 0.616);   
 }
 
 body {
     background-image: url("../images/fondo_body.jpg");
     background-size: cover;
     background-attachment: fixed;    
+    background-color: black;
     
 }
 
-#container_p {   /*Container de Productos*/
+#container_p { 
     background-color: rgb(117, 108, 108);
     position: absolute;
     width: 55%;
@@ -76,16 +76,66 @@ body {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 8%;
-    overflow: hidden; 
+    overflow: hidden;     
+    color: black; /*text-shadow: 0 0 0.2em black, 0 0 0.2em red;  */
+    font-family: 'Nanum Gothic Coding', monospace; 
 }
 
-aside { /*Lista de Productos*/
-background-color: aqua;
-width: 300px;
-height: 600px;
-position: absolute;
-right: 0;
-display: flex;
+#list-product {
+    position: absolute;
+    background-color: rgb(182, 177, 177);
+    width: 75%; 
+    display: flex;
+    height: 100%;
+    /* overflow-y: scroll; */
+    padding: 10px;
+    align-items: center;
+}
+
+.product {
+    position: relative;
+    border: 5px inset rgb(173, 21, 21);
+    width: 95%;    
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+aside {
+    background-color: rgb(0, 0, 0);
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    font-size: 1.3rem;
+}
+
+aside li {
+    list-style: none;          
+}
+
+aside li a {
+    color: white; text-shadow: 0 0 0.2em rgba(255, 0, 0, 0.644);    
+    text-decoration: none;
+    font-weight: bold; 
+    background-color: rgba(44, 42, 42, 0.568);
+    display: flex;
+    padding: 10%;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+aside li a:hover {
+    background: rgba(243, 35, 35, 0.342); 
+}
+
+.logos {
+    margin-top: 10px;
+    margin-bottom: -5px;
+    margin-left: -5px;
 }
 
 footer {

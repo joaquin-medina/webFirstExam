@@ -27,51 +27,53 @@
     </nav>                
 </header>
 <body>
-    <div id="container_c">
-        <section>
+    <section id="container_c">
             <div id="contact_text">
                 <h1>CONTACTO</h1>
                 <h3>SUPLEMENTOS CHAVES</h3><br>
                 <h4>INFORMACIÓN DE CONTACTO</h4><br>
-                <p>Email: <br> contacto@supchaves.com.ar <img src="images/mail.png" height="25px" alt="Logo de un Sobre"/> </p><br>
+                <p>Email:<br> contacto@supchaves.com.ar <img class="logos" src="images/mail.png" height="25px" alt="Logo de un Sobre"/></p><br>
                 <p> WhatsApp: <br>
                     <a href="https://wa.me/2983547103" target="_blank" title="Contactar por WhatsApp">2983547103 - Joaquín</a> 
-                    <a href="https://wa.me/2983570582" target="_blank" title="Contactar por WhatsApp">2983570582 - Sergio</a> <img src="./images/wapp.png" height="25px" alt="Logo de WhatsApp"/> 
+                    <a href="https://wa.me/2983570582" target="_blank" title="Contactar por WhatsApp">2983570582 - Sergio</a> <img class="logos" src="./images/wapp.png" height="27px" alt="Logo de WhatsApp"/> 
                 </p><br> 
                 <p>Redes sociales: <br>
-                    <a href="https://www.instagram.com/suplementoschaves" target="_blank" title="Ir al perfil de Instagram">Instragram</a> <img src="./images/ig.png" height="25px"/>
-                    <a href="https://www.facebook.com/suplementoschaves/" target="_blank" title="Ir al perfil en Facebook"> Facebook</a> <img src="./images/meta.png" height="25px"/>
+                    <a href="https://www.instagram.com/suplementoschaves" target="_blank" title="Ir al perfil de Instagram">Instragram</a> <img class="logos" src="./images/ig.png" height="27px"/>
+                    <a href="https://www.facebook.com/suplementoschaves/" target="_blank" title="Ir al perfil en Facebook"> Facebook</a> <img class="logos" src="./images/meta.png" height="27px"/>
                 </p><br>
-                <!-- <p>
-                    Domicilio: <br>
-                    Mar del Plata 130 - Adolfo Gonzales Chaves <br>
-                    Calle 43 730 - La Plata
-                </p> -->
             </div>            
             <div id="contact_form">
                 <form>                                       
                     <div id="left">
                         <h2>FORMULARIO DE CONTACTO:</h2> 
-                        <label for="name">Nombre: <br><input type="text" id="name" placeholder="Escriba su nombre" required name="form" size="50"></label><br>
-                        <label for="phone">Celular: <br><input type="tel" id="phone" placeholder="Escriba su celular" required name="form" size="50"></label><br>
-                        <label for="email">E-mail: <br><input type="text" id="email" placeholder="Escriba su mail" required name="form" size="50"></label><br>
+                        <label for="name">Nombre: <br>
+                            <input type="text" name="name" id="name" placeholder="Escriba su nombre" required name="form" size="50">
+                        </label><br>
+                        <label for="phone">Celular: <br>
+                            <input type="text" name="phone" id="phone" placeholder="Escriba su celular" required name="form" size="50">
+                        </label><br>
+                        <label for="email">E-mail: <br>
+                            <input type="text" name="email" id="email" placeholder="Escriba su mail" required name="form" size="50">
+                        </label><br>
                     </div>
                     <div id="right">                
-                        <label for="messaje">Mensaje:<br><textarea id="messaje" placeholder="Deje aquí su mensaje" required name="form"></textarea></label>
-                        <button type="submit" >Enviar</button>
+                        <label for="message">Mensaje:<br>
+                            <textarea name="message" id="message" placeholder="Deje aquí su mensaje" required name="form" cols="60" rows="8"></textarea>
+                        </label>
+                        <button type="submit" id="submit">Enviar</button>
                     </div>
                 </form>               
 
             </div>
-        </section>
-    </div>    
+    </section>      
+    <script src="./scripts/contact.js"></script>
 </body>
 <footer>
     <p>
         Created by Joaquin Medina © 2022 - Contact: 
-        <a href="https://github.com/joaquin-medina" target="_blank" title="Ir al perfil de GitHub"> <img src="./images/gh_logo.png" alt="Logo de GitHub" height="20px"/></a> 
-        <a href="https://www.linkedin.com/in/joaquin-medina/" target="_blank" title="Ir al perfil de LinkedIn"><img src="./images/linkedin_logo.png" alt="Logo de LinkedIn" height="20px" /></a> 
-        <a href="mailto:joaquinmedinadev@gmail.com" title="Contactar por email"> <img src="./images/mail_logo.png" alt="Logo de Gmail" height="20px"/></a>
+        <a href="https://github.com/joaquin-medina" target="_blank" title="Ir al perfil de GitHub"> <img class="logos" src="./images/gh_logo.png" alt="Logo de GitHub" height="20px"/></a> 
+        <a href="https://www.linkedin.com/in/joaquin-medina/" target="_blank" title="Ir al perfil de LinkedIn"><img class="logos" src="./images/linkedin_logo.png" alt="Logo de LinkedIn" height="20px" /></a> 
+        <a href="mailto:joaquinmedinadev@gmail.com" title="Contactar por email"> <img class="logos" src="./images/mail_logo.png" alt="Logo de Gmail" height="20px"/></a>
     </p>
-</footer>
+</footer> 
 </html>

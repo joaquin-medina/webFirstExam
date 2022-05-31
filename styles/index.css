@@ -12,22 +12,21 @@ header {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 4.9%;
-    background-color: rgba(19, 17, 17, 0.712);
+    background-color: rgb(0, 0, 0); 
     border-radius: 3rem 0rem 0rem 0rem;
-    
 }
 
 #logo { 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(241, 234, 234);
     position: absolute;
-    height: 65px; 
+    height: 70px; 
     width: 200px;
     border-radius: 60px; 
     left: 0;   
-    top: 0;
-    padding: 0.5px;
-    z-index: 100;
-    margin-top: -3px;
+    bottom: -1px;
+    z-index: 30;
+    transform: scale(1.08);
+
 }
 
 .navbar {
@@ -51,26 +50,27 @@ header {
     color: white; text-shadow: 0 0 0.2em rgba(255, 0, 0, 0.644);
     text-decoration: none;
     font-weight: bold; 
-    background-color: rgba(0, 0, 0, 0.486);
-    padding: 22.5px; 
-    /* border-radius: 1rem;  */
+    background-color: rgba(44, 42, 42, 0.568);
+    padding: 22.5px;   
     display: flex;
     
 }
 
 .menu li a:hover {
-    background: rgba(211, 18, 18, 0.432);    
+    background: rgba(243, 35, 35, 0.616);   
 }
 
 body {
     background-image: url("../images/fondo_body.jpg");
     background-size: cover;
     background-attachment: fixed;    
+    background-color: black;
     
 }
 
 #container_i { /*Container del index*/
     background-image: url("../images/fondo_index.jpg");
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;  
     position: absolute; 
@@ -110,6 +110,12 @@ body {
 #container_i a:hover {
     background: rgba(243, 35, 35, 0.616);
     padding: 0.2rem;
+}
+
+.logos {
+    margin-top: 10px;
+    margin-bottom: -5px;
+    margin-left: -5px;
 }
 
 footer {
