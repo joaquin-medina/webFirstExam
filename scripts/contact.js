@@ -9,6 +9,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const submitButton = myForm.querySelector('#submit');
 
     submitButton.addEventListener('click', (event) => {
+        
+        event.preventDefault()
 
         const userData = {
             username: inputName.value,
