@@ -16,7 +16,7 @@ header {
     border-radius: 3rem 0rem 0rem 0rem;
 }
 
-#logo { 
+#logo { /*Logo principal*/
     background-color: rgb(241, 234, 234);
     position: absolute;
     height: 70px; 
@@ -25,7 +25,7 @@ header {
     left: 0;   
     bottom: -1px;    
     z-index: 30;
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .navbar {
@@ -38,7 +38,7 @@ header {
 
 .menu {
     display: flex;
-    font-family: 'Nanum Gothic Coding', monospace;    
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif;    
 }
 
 .menu li {
@@ -67,7 +67,7 @@ body {
     
 }
 
-#container_c { 
+.container-c { /*Contenedor principal*/
     background-image: url("../images/soporte.jpg");
     background-color: black;
     background-repeat: no-repeat;
@@ -80,66 +80,67 @@ body {
     margin-top: 8%;
     overflow: hidden;
     color: rgb(255, 255, 255); text-shadow: 0 0 0.2em rgb(0, 0, 0), 0 0 0.2em rgb(255, 0, 0);
-    font-family: 'Nanum Gothic Coding', monospace;   
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif;    
     font-size: 1.5rem;
 }
 
-#container_c a { 
+.container-c a { 
     color: white;
 }
 
-#container_c a:hover {
+.container-c a:hover {
     background: rgba(243, 35, 35, 0.616);   
     padding: 1px;
 
 }
 
-.logos {
-    margin-top: 10px;
-    margin-bottom: -5px;
-    margin-left: -5px;
-}
 
-#contact_text {
+.contact-text {
     margin-left: 2.5rem;
     margin-top: 2rem;    
     
 }
 
-#contact_form {
+.contact-form {
     margin-left: 2.5rem;
     margin-top: 2rem;
 }
 
-#left {    
+.left {    
     width: 50%;
     position: absolute;
     float: left;       
     bottom: 2.5rem;      
 }
 
-#right {    
+.right {    
     width: 50%;
     position: absolute;    
     bottom: 2.5rem;
     right: 0;    
-
+    
 }
 
-#messaje {
+.messaje {
     width: 30rem;
     height: 5.7rem;
 }
 
-#contact_form h2 {
+.contact-form h2 {
     position: relative;
     margin-bottom: 1rem;
     
 }
 
+.logos { /*Logos del footer*/
+    margin-top: 10px;
+    margin-bottom: -5px;
+    margin-left: -5px;
+}
+
 footer {
     background-color: rgba(255, 255, 255, 0.582);
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif; 
     position: absolute; 
     color: black;       
     width: 100%;

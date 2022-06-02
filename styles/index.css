@@ -16,7 +16,7 @@ header {
     border-radius: 3rem 0rem 0rem 0rem;
 }
 
-#logo { 
+#logo { /*Logo principal*/
     background-color: rgb(241, 234, 234);
     position: absolute;
     height: 70px; 
@@ -25,7 +25,7 @@ header {
     left: 0;   
     bottom: -1px;
     z-index: 30;
-    transform: scale(1.08);
+    transform: scale(1.05);
 
 }
 
@@ -39,7 +39,7 @@ header {
 
 .menu {
     display: flex;
-    font-family: 'Nanum Gothic Coding', monospace;    
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif;    
 }
 
 .menu li {
@@ -68,7 +68,7 @@ body {
     
 }
 
-#container_i { /*Container del index*/
+.container-i { /*Container del index*/
     background-image: url("../images/fondo_index.jpg");
     background-color: black;
     background-repeat: no-repeat;
@@ -84,35 +84,35 @@ body {
 
 }
 
-#container_i h1  { /*Titulo del index*/
+.container-i h1  { /*Titulo del index*/
     margin-top: 1.5rem;
     margin-bottom: 2.3rem;
     text-align: center;
     font-size: 3.5rem;
     color: white; text-shadow: 0 0 0.2em rgb(201, 25, 25), 0 0 0.2em rgb(221, 37, 37);
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif; 
  
 }
 
-#container_i p { /*Parrafos del Index*/
+.container-i p { /*Parrafos del Index*/
     text-align: center;
     font-size: 1.95rem;
     color: white; text-shadow: 0 0 0.2em black, 0 0 0.2em red; 
-    font-family: 'Nanum Gothic Coding', monospace;    
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif;    
     margin: 1.5rem;
 }
 
-#container_i a { /*Links */
+.container-i a { /*Links */
     color: whitesmoke;
 
 }
 
-#container_i a:hover {
+.container-i a:hover {
     background: rgba(243, 35, 35, 0.616);
     padding: 0.2rem;
 }
 
-.logos {
+.logos { /*Logos del footer*/
     margin-top: 10px;
     margin-bottom: -5px;
     margin-left: -5px;
@@ -120,7 +120,7 @@ body {
 
 footer {
     background-color: rgba(245, 222, 222, 0.644);
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif; 
     position: absolute; 
     color: black;       
     width: 100%;

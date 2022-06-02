@@ -16,7 +16,7 @@ header {
     border-radius: 3rem 0rem 0rem 0rem;
 }
 
-#logo { 
+#logo { /*Logo principal*/
     background-color: rgb(241, 234, 234);
     position: absolute;
     height: 70px; 
@@ -25,7 +25,7 @@ header {
     left: 0;   
     bottom: -1px;
     z-index: 30;
-    transform: scale(1.08);
+    transform: scale(1.05);
 
 }
 
@@ -39,7 +39,7 @@ header {
 
 .menu {
     display: flex;
-    font-family: 'Nanum Gothic Coding', monospace;    
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif;    
 }
 
 .menu li {
@@ -68,7 +68,7 @@ body {
     
 }
 
-#container_p { 
+.container-p { /*Contenedor principal*/
     background-color: rgb(117, 108, 108);
     position: absolute;
     width: 55%;
@@ -77,22 +77,22 @@ body {
     margin-right: 20%;
     margin-top: 8%;
     overflow: hidden;     
-    color: black; /*text-shadow: 0 0 0.2em black, 0 0 0.2em red;  */
-    font-family: 'Nanum Gothic Coding', monospace; 
+    color: black; 
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif; 
 }
 
-#list-product {
+.cards-container { /*Contenedor de los productos*/
     position: absolute;
     background-color: rgb(182, 177, 177);
     width: 75%; 
     display: flex;
     height: 100%;
-    /* overflow-y: scroll; */
     padding: 10px;
     align-items: center;
+    font-size: 1.2rem;
 }
 
-.product {
+.card {
     position: relative;
     border: 5px inset rgb(173, 21, 21);
     width: 95%;    
@@ -104,35 +104,36 @@ body {
     text-align: center;
 }
 
-aside {
-    background-color: rgb(0, 0, 0);
+aside { /*Barra listas de productos*/
+    background-color: rgba(0, 0, 0, 0.952);   
     width: 25%;
     height: 100%;
     position: absolute;
     right: 0;
-    font-size: 1.3rem;
+    font-size: 1.4rem;    
 }
 
 aside li {
-    list-style: none;          
+    list-style: none;       
 }
 
 aside li a {
     color: white; text-shadow: 0 0 0.2em rgba(255, 0, 0, 0.644);    
     text-decoration: none;
     font-weight: bold; 
-    background-color: rgba(44, 42, 42, 0.568);
+    background-color: rgb(26, 24, 24);
     display: flex;
     padding: 10%;
-    margin-top: 10%;
-    justify-content: center;
+    margin-top: 20%;
+    justify-content: center;   
+
 }
 
 aside li a:hover {
-    background: rgba(243, 35, 35, 0.342); 
+    background: rgba(243, 35, 35, 0.651); 
 }
 
-.logos {
+.logos { /*Logos del footer*/
     margin-top: 10px;
     margin-bottom: -5px;
     margin-left: -5px;
@@ -140,7 +141,7 @@ aside li a:hover {
 
 footer {
     background-color: rgba(255, 255, 255, 0.582);
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif; 
     position: absolute; 
     color: black;       
     width: 100%;

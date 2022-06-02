@@ -7,8 +7,8 @@
     <title>Suplementos Chaves - Productos</title>
     <link rel="stylesheet" href="./styles/products.css">
 </head>
-<header>
-    <nav class="navbar">
+<header> <!--Barra menú de navegación-->
+    <nav class="navbar"> 
         <a href="/index.html"><div id="logo"><img src="images/logo2.png" alt="Logo de Suplementos Chaves" id="logo"/></div></a>
             <ul class="menu">
                 <li>
@@ -27,14 +27,17 @@
     </nav>                
 </header>
 <body>
-<div id="container_p">
-        <section id="list-product">
+<div class="container-p"> <!--Conteneor principal-->
+    <article>
+        <section class="cards-container"> <!--Contenedor de los productos-->
              <ul>
                 <li>
                 <hr>
-                    <div class="product">
-                        <img class="imgprod" src="./images/wheystar.png" alt="Imagen de whey protein Star Nutrition" />
-                        <div>
+                    <div class="card">
+                        <div class="box-img">
+                            <img class="product-img" src="./images/wheystar.png" alt="Imagen de whey protein Star Nutrition"/>
+                        </div>
+                        <div class="box-container">
                             <h4>Whey Protein (2Lbs) - $3.800</h4><br>
                             <h5>STAR NUTRITION</h5><br>
                             <p>Proteinas de la mejor digestibilidad y absorcion. <br> Ideales para utilizar en tus colaciones o en tu ingesta de alimentos post entrenamiento.</p><br>
@@ -42,38 +45,44 @@
                     </div>
                 </li>
                 <li>
-                    <div class="product">
-                        <img class="imgprod" src="./images/wheymer.png" alt="Imagen de whey protein Mervick" />
-                        <div>
+                    <div class="card">
+                        <div class="box-img">
+                            <img class="product-img" src="./images/wheymer.png" alt="Imagen de whey protein Mervick"/>
+                        </div>
+                        <div class="box-container">
                             <h4>Whey Protein (1Kg) - $3.300</h4><br>
                             <h5>MERVICK</h5><br>
                             <p>Proteinas de excelente absorcion y digestibilidad. <br> Ideal para uso en colaciones siendo una excelente ayuda para alcanzar las 6 comidas diarias requeridas.</p><br>
-                        </div>              
-                     </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <div class="product">                        
-                        <img class="imgprod" src="./images/wheynutri.png" alt="Imagen de whey protein Nutrilab" />
-                        <div>
+                    <div class="card">
+                        <div class="box-img">
+                            <img class="product-img" src="./images/wheynutri.png" alt="Imagen de whey protein Nutrilab"/>
+                        </div>
+                        <div class="box-container">
                             <h4>Whey Pro (1Kg) - $2.500</h4><br>
-                            <h5>NUTRILAB</h5><br> 
-                            <p>Proteinas de la mejor digestibilidad y absorcion.<br> Ideales para utilizar en tus colaciones o en tu ingesta de alimentos post entrenamiento.</p><br>
-                        </div>                        
+                            <h5>NUTRILAB</h5><br>
+                            <p>Proteínas concentradas de suero lácteo, ideales para su uso en batidos post entrenamiento o como colaciones.</p><br>
+                        </div>
                     </div>
                 </li>
                 <hr>            
             </ul>
         </section>
-    <aside>
-        <ul>
-            <li><a href="#">Whey protein</a></li>
-            <li><a href="#">Creatine</a></li>
-            <li><a href="#">Gainer</a></li>
-            <li><a href="#">Pre-work</a></li>
-            <li><a href="#">Post-work</a></li>
-        </ul>
-    </aside>    
+    </article>
+        <aside> <!--Menú navegación de los productos-->
+            <ul>
+                <li class="card-change" card-change="set1"><a href="#">Whey protein</a></li>
+                <li class="card-change" card-change="set2"><a href="#">Creatine</a></li>
+                <li class="card-change" card-change="set3"><a href="#">Gainer</a></li>
+                <li class="card-change" card-change="set4"><a href="#">Pre-work</a></li>
+                <li class="card-change" card-change="set5"><a href="#">Post-work</a></li>
+            </ul>
+        </aside>
 </div>
+<script src="./scripts/products.js"></script>
 </body>
 <footer>
     <p>

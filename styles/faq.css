@@ -16,7 +16,7 @@ header {
     border-radius: 3rem 0rem 0rem 0rem;
 }
 
-#logo { 
+#logo { /*Logo principal*/
     background-color: rgb(241, 234, 234);
     position: absolute;
     height: 70px; 
@@ -25,7 +25,7 @@ header {
     left: 0;   
     bottom: -1px;
     z-index: 30;
-    transform: scale(1.08);
+    transform: scale(1.05);
 
 }
 
@@ -39,7 +39,7 @@ header {
 
 .menu {
     display: flex;
-    font-family: 'Nanum Gothic Coding', monospace;    
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif;    
 }
 
 .menu li {
@@ -68,7 +68,7 @@ body {
     
 }
 
-#container_f { /*Container de Preguntas*/
+.container-f { /*Container de Preguntas*/
     background-color: black;
     background-image: url("../images/preg_frec2.jpg");
     background-repeat: no-repeat;
@@ -86,35 +86,35 @@ body {
     justify-content: center;
 }
 
-/* #container_f h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: white; text-shadow: 0 0 0.2em red, 0 0 0.2em black ;
-    font-family: 'Nanum Gothic Coding', monospace;
-    margin: 2%;    
-} */
-
-#container_f ul li {
+.container-f ul li {
     margin: 5px;
     list-style: none;
 
 }
 
-#container_f h3 {
-    /* text-align: start; */
+.container-f h3 {    
     font-size: 2.2rem;
     color: white; text-shadow: 0 0 0.2em red, 0 0 0.2em black ;
-    font-family: 'Nanum Gothic Coding', monospace;    
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif;    
 }
 
-#container_f p {
-    /* text-align: start; */
+.container-f p {    
     font-size: 2rem;
     color: white; text-shadow: 0 0 0.2em black, 0 0 0.2em rgb(189, 38, 38);
-    font-family: 'Nanum Gothic Coding', monospace;    
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif;    
 }
 
-.logos {
+.container-f a {
+    color: white; text-shadow: 0 0 0.2em black, 0 0 0.2em rgb(189, 38, 38);
+}
+
+.container-f a:hover {
+    background: rgba(243, 35, 35, 0.616);   
+    padding: 1px;
+
+}
+
+.logos { /*Logos del footer*/
     margin-top: 10px;
     margin-bottom: -5px;
     margin-left: -5px;
@@ -122,7 +122,7 @@ body {
 
 footer {
     background-color: rgba(255, 255, 255, 0.582);
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Nanum Gothic Coding', monospace, Verdana, Tahoma, sans-serif; 
     position: absolute; 
     color: black;       
     width: 100%;
